@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/style.css" >
+	<title>Your Website</title>
+</head>
+
+<body>
+    <div class="app-container">  
+	<header>
+		<h1>SpaceX Launch Programs
+    </header>
+  
+	<aside>
+        <h4>Filters</h4>
+        <input type="number" onchange="loadDoc(genrateurlclick(this.value))" placeholder="Launch Year"/>
+        <div id="launch_years">
+            <div id="jjj" class="year  tab" onclick="loadDoc(genrateurlclick('2006',this))">2006</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2007'))">2007</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2008'))">2008</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2009'))">2009</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2010'))">2010</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2011'))">2011</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2012'))">2012</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2013'))">2013</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2014'))">2014</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2015'))">2015</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2016'))">2016</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2017'))">2017</div>
+            <div class="year  tab" onclick="loadDoc(genrateurlclick('2018'))">2018</div>
+        </div> 
+        <input type="text" onchange="loadDoc(genrateurltyp(this.value, false))" placeholder="Successful Launch"/>
+        <div id="successfullyLaunch">
+            <div class="tab" onclick="loadDoc(genrateurltyp('true',false))">True</div>
+            <div class="tab" onclick="loadDoc(genrateurltyp('false',false))">False</div>
+        </div> 
+        <input type="text" onchange="loadDoc(genrateurltyp(this.value,true))" placeholder="Successful Landing"/>
+        <div id="successfullylanding">
+            <div class="tab" onclick="loadDoc(genrateurltyp('true',true))">True</div>
+            <div class="tab" onclick="loadDoc(genrateurltyp('false',true))">False</div>
+        </div>
+    </aside>
+    
+    <section>
+        <div id="data_row" class="row">
+        </div>
+	</section>
+</div>
+<footer>
+    <p><b>Developed by:</b> Rijwan</p>
+</footer>
+<script type="text/javascript" src="assets/script.js" defer></script>
+</body>
+</html>
